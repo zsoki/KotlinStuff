@@ -10,8 +10,10 @@ class NullSafety {
         // FIXME type mismatch!
         textNonNullable = textNullable
 
-        textNonNullable = textNullable ?: "default"
+        // FIXME I'm sure nothing bad will happen
+        textNonNullable = textNullable!!
 
+        // FIXME some nullable variants of types have extra methods
         textNonNullable = textNullable.orEmpty()
 
         return textNullable
@@ -23,7 +25,6 @@ class NullSafety {
         var textNullable: String?
 
         textNonNullable = textNullable
-
 
         if (textNullable == null) {
             throw RuntimeException()
