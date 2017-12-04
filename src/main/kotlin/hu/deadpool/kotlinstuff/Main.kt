@@ -30,6 +30,13 @@ object Main {
         val observer = Observer()
         Subscriber(observer)
         observer.triggerEvent()
+
+//        TODO observer-listerner higher order
+        val observerHigher = ObserverHigherOrder()
+        SubscriberHigherOrder(observerHigher)
+        observerHigher.triggerEvent()
+        observerHigher.triggerEvent()
+        observerHigher.triggerEvent()
     }
 
 }
