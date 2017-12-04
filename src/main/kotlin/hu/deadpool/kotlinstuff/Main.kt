@@ -17,6 +17,14 @@ object Main {
         val companionExample = CompanionExample("Ninjaa", "Fleex")
         val companionExample2 = CompanionExample("Fleex", "Ninjaa")
 
+        println(Singleton.getRepository())
+        println(Singleton.getRepository())
+
+        val friendZone = Singleton.funWithData(User("Pista", "777777777sdfg", 0))
+
+//        TODO compiler has no idea anymore about the anonymous type
+//        friendZone.boy
+        println(friendZone.toString())
     }
 
 }
