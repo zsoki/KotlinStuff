@@ -25,6 +25,11 @@ object Main {
 //        TODO compiler has no idea anymore about the anonymous type
 //        friendZone.boy
         println(friendZone.toString())
+
+//        TODO observer-listener
+        val observer = Observer()
+        Subscriber(observer)
+        observer.triggerEvent()
     }
 
 }
