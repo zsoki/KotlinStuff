@@ -14,6 +14,9 @@ object Main {
 //        BClass()
 //        BClass("text")
 
+        val companionExample = CompanionExample("Ninjaa", "Fleex")
+        val companionExample2 = CompanionExample("Fleex", "Ninjaa")
+
     }
 
 }
