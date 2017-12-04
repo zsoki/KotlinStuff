@@ -59,4 +59,16 @@ class Immutability {
         print("Construction in millis: $constructionTime")
         print("Access in millis: $accessTime")
     }
+
+    @Test(expectedExceptions = [(IllegalStateException::class)])
+    fun `not null single value not initialized`() {
+        DelegatesExample().nonNullable
+    }
+
+    @Test(expectedExceptions = [(IllegalStateException::class)])
+    fun `not null single value already initialized`() {
+        val delegatesExample = DelegatesExample()
+        delegatesExample.nonNullable = LazyExample()
+        delegatesExample.nonNullable = LazyExample()
+    }
 }

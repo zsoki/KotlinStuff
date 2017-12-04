@@ -35,3 +35,13 @@ private fun expensiveCalculation(stringToReturn: String) : String {
     Thread.sleep(500)
     return stringToReturn
 }
+
+
+
+
+
+class DelegatesExample {
+
+    var nonNullable: LazyExample by DelegatesExt.notNullSingleValue()
+
+}
