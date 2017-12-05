@@ -14,29 +14,32 @@ object Main {
 //        BClass()
 //        BClass("text")
 
-        val companionExample = CompanionExample("Ninjaa", "Fleex")
-        val companionExample2 = CompanionExample("Fleex", "Ninjaa")
-
-        println(Singleton.getRepository())
-        println(Singleton.getRepository())
-
-        val friendZone = Singleton.funWithData(User("Pista", "777777777sdfg", 0))
+//        val companionExample = CompanionExample("Ninjaa", "Fleex")
+//        val companionExample2 = CompanionExample("Fleex", "Ninjaa")
+//
+//        println(Singleton.getRepository())
+//        println(Singleton.getRepository())
+//
+//        val friendZone = Singleton.funWithData(User("Pista", "777777777sdfg", 0))
 
 //        TODO compiler has no idea anymore about the anonymous type
 //        friendZone.boy
-        println(friendZone.toString())
+//        println(friendZone.toString())
 
 //        TODO observer-listener
-        val observer = Observer()
-        Subscriber(observer)
-        observer.triggerEvent()
+//        val observer = Observer()
+//        Subscriber(observer)
+//        observer.triggerEvent()
 
 //        TODO observer-listerner higher order
-        val observerHigher = ObserverHigherOrder()
-        SubscriberHigherOrder(observerHigher)
-        observerHigher.triggerEvent()
-        observerHigher.triggerEvent()
-        observerHigher.triggerEvent()
+//        val observerHigher = ObserverHigherOrder()
+//        SubscriberHigherOrder(observerHigher)
+//        observerHigher.triggerEvent()
+//        observerHigher.triggerEvent()
+//        observerHigher.triggerEvent()
+
+        val freeSpace = FreeSpace.calculateFreeSpaceKb().humanReadable()
+        print(freeSpace)
     }
 
 }
