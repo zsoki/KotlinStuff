@@ -5,7 +5,7 @@ import kotlin.system.measureTimeMillis
 
 class Immutability {
 
-    private val example = ImmutabilityExample1()
+    private val example = ImmutabilityExample()
 
     @Test
     fun `lateinit variable is null`() {

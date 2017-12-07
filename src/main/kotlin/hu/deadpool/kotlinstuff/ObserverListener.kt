@@ -6,6 +6,7 @@ interface EventListener {
 
 }
 
+
 class Observer {
 
     private val listeners = mutableSetOf<EventListener>()
@@ -19,6 +20,7 @@ class Observer {
     }
 
 }
+
 
 class Subscriber(observer: Observer) {
 

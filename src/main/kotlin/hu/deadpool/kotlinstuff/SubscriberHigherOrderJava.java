@@ -2,6 +2,7 @@ package hu.deadpool.kotlinstuff;
 
 import kotlin.Unit;
 
+// TODO demonstrating closures
 public class SubscriberHigherOrderJava {
 
     public SubscriberHigherOrderJava(ObserverHigherOrder observerHigherOrder) {

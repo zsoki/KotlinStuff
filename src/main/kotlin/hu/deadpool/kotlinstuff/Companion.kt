@@ -9,7 +9,8 @@ interface Printer {
 
 }
 
-class CompanionExample(val aProperty: String, val anoterOne: String) {
+
+class CompanionExample(val aProperty: String, val bProperty: String) {
 
     init {
         countInstance(this)
@@ -20,7 +21,7 @@ class CompanionExample(val aProperty: String, val anoterOne: String) {
 
         fun countInstance(instance: CompanionExample) {
             counter++
-            myPrinter(counter, instance.aProperty, instance.anoterOne)
+            myPrinter(counter, instance.aProperty, instance.bProperty)
         }
     }
 }

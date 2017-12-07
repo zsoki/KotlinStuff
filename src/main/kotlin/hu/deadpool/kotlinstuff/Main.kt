@@ -11,16 +11,16 @@ object Main {
 //        NullSafety().`safe calls`(null)
 //
 //        TODO no default constructor
-//        BClass()
-//        BClass("text")
+//        ChildClass()
+//        ChildClass("text")
 
 //        val companionExample = CompanionExample("Ninjaa", "Fleex")
 //        val companionExample2 = CompanionExample("Fleex", "Ninjaa")
 //
-//        println(Singleton.getRepository())
-//        println(Singleton.getRepository())
+//        println(UserRepository.getRepository())
+//        println(UserRepository.getRepository())
 //
-//        val friendZone = Singleton.funWithData(User("Pista", "777777777sdfg", 0))
+//        val friendZone = UserRepository.funWithData(User("Pista", "777777777sdfg", 0))
 
 //        TODO compiler has no idea anymore about the anonymous type
 //        friendZone.boy

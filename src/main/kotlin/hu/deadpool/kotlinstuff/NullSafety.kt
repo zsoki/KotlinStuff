@@ -30,17 +30,19 @@ class NullSafety {
 //            throw RuntimeException()
 //        }
 //
+//        textNullable.plus(5)
+//
 //        return textNonNullable
 //    }
-
-
+//
+//
 //    fun `either way, you need to initialize both nullable and non-nullable types`() : String? {
 //
 //        var textNullable: String?
 //
 //        return textNullable
 //    }
-
+//
 //    fun `safe calls`(nullableString: String?) : Int {
 //
 //        val verbose = if (nullableString != null) nullableString.length else 5

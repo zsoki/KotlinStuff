@@ -16,6 +16,7 @@ class ObserverHigherOrder {
 
 }
 
+
 class SubscriberHigherOrder(observer: ObserverHigherOrder) {
 
     init {

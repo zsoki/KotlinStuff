@@ -1,7 +1,8 @@
 package hu.deadpool.kotlinstuff
 
+// TODO Annotation definition
 @Target(AnnotationTarget.VALUE_PARAMETER,
-//        AnnotationTarget.PROPERTY,
+        AnnotationTarget.PROPERTY,
         AnnotationTarget.PROPERTY_GETTER,
         AnnotationTarget.PROPERTY_SETTER,
         AnnotationTarget.FIELD)
@@ -9,28 +10,26 @@ package hu.deadpool.kotlinstuff
 annotation class WhereDoIPootis
 
 
-class AnnotateThis(@field:WhereDoIPootis val exampleText: String) {
+// TODO parameter annotation
+class ConstructorParamAnnotation(@WhereDoIPootis val exampleText: String)
 
-    fun `fun`() {
-        print(exampleText)
-    }
 
-}
-
-class AnnotateThis2(exampleText: String) {
+// TODO use-site target demonstration
+class AnnotationExamples(exampleText: String) {
 
     @WhereDoIPootis
-    val exampleText: String = exampleText
+    val exampleProperty: String = exampleText
 
-    val example2: String
-        @WhereDoIPootis get() = "Test"
+    val propertyWithGetter: String
+        @WhereDoIPootis get() {
+            return "Test"
+        }
 
-    var example3: String = ""
+    var propertyWithSetter: String = ""
         @WhereDoIPootis set(value) {
             field = value
         }
 }
-
 
 /*
     If you don't specify a use-site target,

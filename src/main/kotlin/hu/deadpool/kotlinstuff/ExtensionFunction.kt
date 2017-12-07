@@ -11,6 +11,7 @@ fun Long.humanReadable(): String {
     return DecimalFormat("#,##0.#").format(this / Math.pow(1024.0, digitGroups.toDouble())) + " " + units[digitGroups]
 }
 
+
 object FreeSpace {
 
     fun calculateFreeSpaceKb() : Long {
